@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link href="https://fonts.googleapis.com/css?family=Space+Grotesk:regular,500,700&display=swap" rel="stylesheet" />
     <title>Sneakers</title>
 </head>
@@ -14,8 +15,30 @@
             <a href="" class="header__logo">SHOESHOP</a>
             <a href="" class="header__cart">Cart (<span>0</span>)</a>
         </header>
-
+        <main class="product">
+            <div class="product__slider swiper">
+                <div class="product__wrapper slwiper-wrapper">
+                    <div class="product__slide swiper-slide">
+                        <div class="product__body">
+                            <div class="product__content">
+                                <div class="product__image">
+                                    <img src="img/image-01.png" class="product__image" alt="">
+                                </div>
+                            </div>
+                            <h2 class="product__title">
+                                NIKE MAG <br> BACK TO THE FUTURE
+                            </h2>
+                        </div>
+                        <div class="product__details">
+                            <div class="product__price">$749</div>
+                            <button type="button" class="product__buy">BUY</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
     </div>
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </body>
 </html>
