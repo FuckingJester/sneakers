@@ -140,3 +140,56 @@ body, html {
   text-decoration: underline;
   transform: translate(1px, 1px);
 }
+
+/* Animation load*/
+.wrapper {
+  opacity: 0;
+}
+
+.loaded .wrapper {
+  opacity: 1;
+  transition: opacity 0.8s ease 0s;
+}
+
+.header {
+  transform: translate(0px, -100%);
+}
+
+.loaded .header {
+  transform: translate(0px, 0px);
+  transition: transform 0.8s ease 1s;
+}
+
+.product__body,
+.product__content {
+  opacity: 0;
+  transform: translate(0px, 5%);
+}
+
+.loaded .product__body,
+.loaded .product__content {
+  opacity: 1;
+  transform: translate(0px, 0px);
+  transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.loaded .product__content {
+  transition-delay: 0.8s;
+}
+
+.loaded .product__body {
+  transition-delay: 0.5s;
+}
+
+.product__price,
+.product__buy {
+  opacity: 0;
+  transform: translate(0px, 100%);
+}
+
+.loaded .product__price,
+.loaded .product__buy {
+  opacity: 1;
+  transform: translate(0px, 0);
+  transition: all 0.8s ease 1s;
+}
