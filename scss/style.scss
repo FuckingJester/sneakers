@@ -194,3 +194,20 @@ body,html{
     transition: all 0.8s ease 1s;
 } 
 
+/* responsive */
+
+@media(max-width: 767.98px){
+    .header{
+        padding: 20px;
+        &__logo{
+            font-size: 32px;
+        }
+    }
+    .product{
+        &__price,
+        &__buy{
+            font-size: 32px;
+        }
+    }
+    
+}
